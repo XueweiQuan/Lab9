@@ -16,7 +16,7 @@ odd_count1 <- function(x){
 
 x <- c(1:100)
 microbenchmark(odd_count(x),odd_count1(x))
-?microbenchmark()
+
 
 # Question2
 sort_vec = function(x, ascending) {
