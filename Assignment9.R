@@ -60,10 +60,10 @@ system.time({for (i in 2:N){
 })
 
 N = 1000
-data_series = 0 
-system.time({for (i in 2:N) {
-  sample_1000 <- sample(c(-1, 1), N-1, replace = T)
-  data_series[i] = data_series[i-1] + sample_1000[i-1] }
+data_series = c(NA)
+length(data_series <- N)
+system.time({for (i in 2:N){
+  data_series[i] = data_series[i-1] + sample(c(-1, 1), 1) }
 })
 
 
@@ -74,10 +74,10 @@ system.time({for (i in 2:N){
 })
 
 N = 10000
-data_series = 0 
-system.time({for (i in 2:N) {
-  sample_10000 <- sample(c(-1, 1), N-1, replace = T)
-  data_series[i] = data_series[i-1] + sample_10000[i-1] }
+data_series = c(NA)
+length(data_series <- N)
+system.time({for (i in 2:N){
+  data_series[i] = data_series[i-1] + sample(c(-1, 1), 1) }
 })
 
 N = 100000
@@ -87,8 +87,8 @@ system.time({for (i in 2:N){
 })
 
 N = 10000
-data_series = 0 
-system.time({for (i in 2:N) {
-  sample_100000 <- sample(c(-1, 1), N-1, replace = T)
-  data_series[i] = data_series[i-1] + sample_100000[i-1] }
+data_series = c(NA)
+length(data_series <- N)
+system.time({for (i in 2:N){
+  data_series[i] = data_series[i-1] + sample(c(-1, 1), 1) }
 })
